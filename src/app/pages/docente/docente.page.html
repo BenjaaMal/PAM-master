@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Generar Asistencia</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-list-header>
+      <ion-label>
+        Selesccionar Curso
+      </ion-label>
+    </ion-list-header>
+  
+    <div>
+      <ion-button color="primary" (click)='logoutUser()'>Cerrar Sesión</ion-button>
+    </div>
+
+    <ion-item>
+      <ion-label>Curso</ion-label>
+      <ion-select placeholder="Cursos...">
+        <ion-select-option value="f">PAM-PGY003D-PROGRAMACION DE APLICACIONES MOVILES</ion-select-option>
+        <ion-select-option value="m">CS-PGY002D-CALIDAD DE SOFTWARE</ion-select-option>
+      </ion-select>
+    </ion-item>
+  
+  </ion-list>  
+
+  <ion-button color="primary" routerLink="/registasist">Generar Asistencia QR</ion-button>
+
+</ion-content>

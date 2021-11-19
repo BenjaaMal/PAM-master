@@ -1,0 +1,16 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>registasist</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  
+
+  <ion-card *ngIf="qrData">
+    <ngx-qrcode [elementType]="elementType" [value]="qrData"></ngx-qrcode>
+  </ion-card>
+
+  <ion-button color="primary" routerLink="/docente">Volver</ion-button>
+
+</ion-content>
